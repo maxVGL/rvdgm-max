@@ -1,0 +1,14 @@
+.NavBar {
+  background: linear-gradient(150deg,rgba(204, 204, 204, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  color: black;
+}
+.NavBar :first-child {
+  font-family: 'BoldPixels';
+  font-size: 30px;
+  text-shadow: 0 3px 0 rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 2px white;
+  paint-order: stroke fill;
+}
+p {
+  color: black;
+}

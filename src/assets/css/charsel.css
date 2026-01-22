@@ -1,0 +1,59 @@
+body {
+    background: #111;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    font-family: tahoma;
+    overflow: hidden;
+}
+
+.bold-pixels {
+    font-family: 'BoldPixels';
+    font-weight: bold;
+}
+
+.name {
+    font-size: 36px;
+}
+.title {
+    font-size: 14px;
+}
+.desc {
+    font-size: 11px;
+}
+
+.character-img {
+    max-height: 400px;
+    pointer-events: none;
+}
+
+#gameBtn {
+    font-size: 50px;
+}
+#returnBtn {
+    font-style: italic;
+}
+
+.pfp {
+    width: 150px;
+    cursor: pointer;
+    -webkit-user-drag: none;
+}
+.pfp:hover {
+    filter: drop-shadow(0 0 5px grey);
+}
+
+.clickable {
+    cursor: pointer;
+}
+.pfp:hover, .clickable:hover {
+    transform: scale(1.2);
+    text-shadow: 1.5px 1.5px 3px #0ff, 3px 3px 3px #00f, -1.5px -1.5px 3px #ff0, -3px -3px 3px #f00;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.155, 2), 
+                text-shadow 0.5s cubic-bezier(0.175, 0.885, 0.155, 2);
+}

@@ -1,0 +1,140 @@
+.NavBar {
+    animation: navbar-slidedown 0.7s ease-in-out;
+}
+@keyframes navbar-slidedown {
+  from {
+    top: -5em;
+  }
+  to {
+    top: 0;
+  }
+}
+.NavBar :first-child {
+    animation-name: text-slidein;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.2s;
+}
+@keyframes text-slidein {
+  from {
+    margin-left: -5em;
+  }
+  to {
+    margin-left: default;
+  }
+}
+
+button {
+  animation: button-slideup 1s cubic-bezier(0.175, 0.885, 0.155, 1.5);
+}
+@keyframes button-slideup {
+  from {
+    margin-bottom: -15em;
+  }
+  to {
+    margin-bottom: 0;
+  }
+}
+
+.CharSel {
+  animation: slideUp 2s cubic-bezier(0.175, 0.885, 0.155, 1.225);
+}
+@keyframes slideUp {
+  0% {
+    margin-top: 100vh;
+    row-gap: 50vh;
+  }
+  50% {
+    margin-top: 0;
+    
+  }
+  100% {
+    row-gap: 0;
+  }
+}
+
+#betaBtn {
+  animation: slideRight 1s cubic-bezier(0.175, 0.885, 0.15, 1.375);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+#betaBtn:hover {
+  opacity: 1;
+  cursor: pointer;
+} 
+@keyframes slideRight {
+  from {
+    left: 10em;
+  }
+  to {
+    left: 0;
+  }
+}
+
+#randomBtn:hover {
+  text-shadow: none;
+  animation: colors 5s ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes colors {
+  0% {
+    color: #f00;
+  }
+  14.285714286% {
+    color: #ff0;
+  }
+  28.571428571% {
+    color: #0f0;
+  }
+  42.857142858% {
+    color: #0ff;
+  }
+  57.142857144% {
+    color: #00f;
+  }
+  85.714285716% {
+    color: #f0f;
+  }
+  100% {
+    color: #f00;
+  }
+}
+
+.cyc {
+  animation: charsel 1s ease-in-out;
+}
+@keyframes charsel {
+  from {
+    width: 1500px;
+  }
+  to {
+    width: 230px;
+  }
+}
+
+
+.hurt {
+  animation: hurt 0.2s cubic-bezier(0.175, 0.885, 0.155, 2);
+}
+@keyframes hurt {
+  from {
+      margin-right: -50px;
+  }
+  to {
+      margin-right: 0;
+  }
+}
+
+.drop {
+  animation: drop 2s cubic-bezier(0.175, 0.885, 0.155, 2);
+  animation-fill-mode: forwards;
+}
+@keyframes drop {
+  from {
+    margin-bottom: 0;
+  }
+  to {
+    margin-bottom: -50em;
+  }
+  
+}

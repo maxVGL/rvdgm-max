@@ -1,0 +1,47 @@
+body {
+    background: #111;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    font-family: tahoma;
+    overflow: hidden;
+    margin: 0;
+}
+
+.clickable {
+    cursor: pointer;
+}
+.clickable:hover {
+    transform: scale(1.2);
+    text-shadow: 1.5px 1.5px 3px #0ff, 3px 3px 3px #00f, -1.5px -1.5px 3px #ff0, -3px -3px 3px #f00;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.155, 2), 
+                text-shadow 0.5s cubic-bezier(0.175, 0.885, 0.155, 2);
+}
+
+.hp-bar {
+    width: 40vh;   
+}
+.dice {
+    height: 80px;
+    width: 80px;
+    background-position: center;
+    background-size: cover;
+    image-rendering: pixelated;
+
+    font-size: 40px;
+}
+
+
+.char-portrait {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
